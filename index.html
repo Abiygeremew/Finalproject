@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="asset/style.css" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
 
 </head>
 <body>
@@ -14,47 +15,101 @@
         <h1>Finalproject</h1>
     </header>
     
-    <form class="needs-validation" novalidate>
+    
+    <form action="results.html" method="get">
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="validationCustom01">Task name:</label>
-            <input type="text" class="form-control" id="validationCustom01" value="name" required>
-            <div class="valid-feedback">
-              
-            </div>
+            <label for="name">Task name:</label>
+            <input type="text" class="form-control" id="name" value="name" required>
+            
           </div>
           <div class="col-md-6 mb-3">
-            <label for="validationCustom02">Assigned To:</label>
-            <input type="text" class="form-control" id="validationCustom02" value="assign to" required>
-            <div class="valid-feedback">
-              
-            </div>
+            <label for="assignedto">Assigned To:</label>
+            <input type="text" class="form-control" id="assignedto" value="assign to" required>
+            
           </div>
         </div>
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="validationCustom03">Status</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
-              
-            </div>
+            <label for="status">Status</label>
+            <input type="text" class="form-control" id="status" required>
+            
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Description</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
           </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom05">Due Date</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-              Please provide a due date.
-            </div>
+          <div class="calender">
+            <label for="task-date">Task date:</label>
+  
+          <input type="date" id="task-date" name="task-date"
+           value="2022-08-21"
+          min="2021-01-01" max="2022-12-31">
           </div>
         </div>
         
-        <button class="btn btn-primary" type="submit">Submit form</button>
+    
+
+        <button class="btn btn-primary" type="submit">Submit Task</button>
       </form>
       
+      <H1>Task</H1>
+      <div>
+      <div>
+        <ul class="list-group">
+          <li class="list-group-item"><div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Task 1</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Changing background color</h6>
+              <p class="card-text">Drescription</p>
+              <p>Assigned To</p>
+              <p>Due date</p>
+              <a href="#" class="card-link">Delete</a>
+            </div>
+          </div></li>
+          <li class="list-group-item"><div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Task 2</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Add Navbar</h6>
+              <p class="card-text">Drescription</p>
+              <p>Assigned To</p>
+              <p>Due date</p>
+              <a href="#" class="card-link">Delete</a>
+            </div>
+          </div></li>
+          <li class="list-group-item"><div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Task 3</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Add Footer</h6>
+              <p class="card-text">Drescription</p>
+              <p>Assigned To</p>
+              <p>Due date</p>
+              <a href="#" class="card-link">Delete</a>
+            </div>
+          </div></li>
+          <li class="list-group-item"><div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Task 4</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Fix Margin</h6>
+              <p class="card-text">Drescription</p>
+              <p>Assigned To</p>
+              <p>Due date</p>
+              <a href="#" class="card-link">Delete</a>
+            </div>
+          </div></li>
+          <li class="list-group-item"><div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Task 5</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Edit design</h6>
+              <p class="card-text">Drescription</p>
+              <p>Assigned To</p>
+              <p>Due date</p>
+              <a href="#" class="card-link">Delete</a>
+            </div>
+          </div></li>
+        </ul>
+      </div>
+      </div>
       
 </body>
 </html>
